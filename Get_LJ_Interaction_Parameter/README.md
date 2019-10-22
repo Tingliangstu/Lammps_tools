@@ -1,6 +1,4 @@
-# Lammps_tools  (Generally used for lammps input) 
-
-## Get_LJ_Interaction_parameter
+# Get_LJ_Interaction_parameter(Generally used for lammps input) 
 
 A small program for obtaining LJ interactions between different elements from the UFF force field (a universal force developed by Rappe et al).
 
