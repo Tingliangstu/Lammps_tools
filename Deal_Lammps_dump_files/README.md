@@ -27,11 +27,14 @@ ITEM: ATOMS id type x y z f_Totaltemperatom
 ## Usage
 1. For matlab version
    You need to modify several parameters in `Deal_dump_files.m` according to your situation:
+   
    **Output_interval**: Interval steps for output dump file in lammps
+   
    **Total_running_steps**: The total number of running steps of lammps during the production period
+   
    **dump_columns**: The number of columns in the dump file (Modify according to your own output)
-   ```  matlab
-  run Deal_dump_files.m file
+   ``` matlab
+    run Deal_dump_files.m file
    ```
   The use of the `textscan` command is key in the matlab version
   ----
