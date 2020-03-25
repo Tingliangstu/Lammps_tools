@@ -36,14 +36,14 @@ ITEM: ATOMS id type x y z f_Totaltemperatom
    ``` matlab
     run Deal_dump_files.m file
    ```
-   **Tips** The use of the `textscan` command is key in the matlab version
+   **Tips**: The use of the `textscan` command is key in the matlab version
   ----
 2. For python version 
-  ``` python 
+   ``` python 
     python Deal_dump_files.py
-  ```
-  **You can modify it carefully after running and use it freely**
-
+   ```
+   **You can modify it carefully after running and use it freely**
+---
 ## Example
 * For matlab version
 In the example, the `dump.main` file was processed. 
