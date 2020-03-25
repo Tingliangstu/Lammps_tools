@@ -25,33 +25,37 @@ ITEM: ATOMS id type x y z f_Totaltemperatom
 - [x] Easy to use and modify
 
 ## Usage
+----
 1. For matlab version
-   You need to modify several parameters in `Deal_dump_files.m` according to your situation:
-   **Output_interval**: Interval steps for output dump file in lammps
-   **Total_running_steps**: The total number of running steps of lammps during the production period
-   **dump_columns**: The number of columns in the dump file (Modify according to your own output)
-   ```  matlab
-  run Deal_dump_files.m file
-   ```
-  The use of the `textscan` command is key in the matlab version
-  ----
-2. For python version 
-  ``` python 
-  python Deal_dump_files.py
-  ```
-**You can modify it carefully after running and use it freely**
 
+   You need to modify several parameters in `Deal_dump_files.m` according to your situation:
+   
+   **Output_interval**: Interval steps for output dump file in lammps
+   
+   **Total_running_steps**: The total number of running steps of lammps during the production period
+   
+   **dump_columns**: The number of columns in the dump file (Modify according to your own output)
+   ``` matlab
+    run Deal_dump_files.m file
+   ```
+   **Tips**: The use of the `textscan` command is key in the matlab version.
+2. For python version 
+   ``` python 
+    python Deal_dump_files.py
+   ```
+   **You can modify python version carefully after running and use it freely**
+----
 ## Example
 * For matlab version
-In the example, the `dump.main` file was processed. 
 
-  ```
-  variable            output_interval        equal         500000
-  dump                1     all     custom   ${output_interval}    dump.main   id   type   x   y   z   f_Totaltemperatom 
-  dump_modify         1     sort    id          #Sort each atom order
+  In the example, the `dump.main` file was processed. And the lammps command is as follows:
+   ```
+   variable            output_interval        equal         500000
+   dump                1     all     custom   ${output_interval}    dump.main   id   type   x   y   z   f_Totaltemperatom 
+   dump_modify         1     sort    id          #Sort each atom order
   
-  run                   40000000                # Total_running_steps
-  ```
+   run                   40000000                # Total_running_steps
+   ```
 
 ## TODO
 
