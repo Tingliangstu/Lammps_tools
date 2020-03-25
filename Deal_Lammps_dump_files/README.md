@@ -42,8 +42,8 @@ ITEM: ATOMS id type x y z f_Totaltemperatom
    ``` python 
     python Deal_dump_files.py
    ```
-   **You can modify it carefully after running and use it freely**
----
+   **You can modify python version carefully after running and use it freely**
+  ----
 ## Example
 * For matlab version
 In the example, the `dump.main` file was processed. 
