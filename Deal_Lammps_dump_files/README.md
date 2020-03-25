@@ -27,6 +27,7 @@ ITEM: ATOMS id type x y z f_Totaltemperatom
 ## Usage
 ----
 1. For matlab version
+
    You need to modify several parameters in `Deal_dump_files.m` according to your situation:
    
    **Output_interval**: Interval steps for output dump file in lammps
@@ -46,6 +47,7 @@ ITEM: ATOMS id type x y z f_Totaltemperatom
 ----
 ## Example
 * For matlab version
+
 In the example, the `dump.main` file was processed. And the lammps command is as follows:
   ```
   variable            output_interval        equal         500000
