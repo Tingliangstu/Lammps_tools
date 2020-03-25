@@ -25,6 +25,7 @@ ITEM: ATOMS id type x y z f_Totaltemperatom
 - [x] Easy to use and modify
 
 ## Usage
+----
 1. For matlab version
    You need to modify several parameters in `Deal_dump_files.m` according to your situation:
    
@@ -36,18 +37,16 @@ ITEM: ATOMS id type x y z f_Totaltemperatom
    ``` matlab
     run Deal_dump_files.m file
    ```
-   **Tips**: The use of the `textscan` command is key in the matlab version
-  ----
+   **Tips**: The use of the `textscan` command is key in the matlab version.
 2. For python version 
    ``` python 
     python Deal_dump_files.py
    ```
    **You can modify python version carefully after running and use it freely**
-  ----
+----
 ## Example
 * For matlab version
-In the example, the `dump.main` file was processed. 
-
+In the example, the `dump.main` file was processed. And the lammps command is as follows:
   ```
   variable            output_interval        equal         500000
   dump                1     all     custom   ${output_interval}    dump.main   id   type   x   y   z   f_Totaltemperatom 
