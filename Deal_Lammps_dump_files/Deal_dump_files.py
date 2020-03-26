@@ -15,9 +15,9 @@ def read_lammps_velocity(dump_file):
 
       # using 'linecache' get the line information  in lammps
       line_number_1 = 4                                      # Total atoms
-      line_number_2 = 9                                      # ITEM: ATOMS id type vx vy vz
+      line_number_2 = 9                                      # ITEM: ATOMS id type vx vy vz (in my case)
       
-      atoms_number = int(linecache.getline(dump_file, line_number_1).strip())       # Get total nubers in your system
+      atoms_number = int(linecache.getline(dump_file, line_number_1).strip())       # Get total numbers in your system
       Judging_characters = linecache.getline(dump_file, line_number_2).strip()      # Get the information in line 9
       
       ''' Use linecache function to directly read the number of atoms in the fourth line of the file '''
@@ -41,9 +41,10 @@ def read_lammps_velocity(dump_file):
                 
                 if add_flag:
                     if line.strip():
+                    	
                         entries = line.strip().split()
                         
-                        '''Just extract the velocity informationOf course,  it can also contain only the information you want (need to modify)'''
+                        '''Just extract the velocity information. Of course,  it can also contain only the information you want (need to modify)'''
                         velocity_atom = [float(t) for t in entries[2:5]]
                         velocity_all.append(velocity_atom) 
                         
