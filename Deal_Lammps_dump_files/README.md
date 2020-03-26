@@ -28,7 +28,7 @@ ITEM: ATOMS id type x y z f_Totaltemperatom
 ----
 1. For matlab version
 
-   You need to modify several parameters in `Deal_dump_files.m` according to your situation:
+   You need to modify several parameters in `Deal_dump_files.m` according to your case:
    
    **Output_interval**: Interval steps for output dump file in lammps
    
@@ -43,7 +43,7 @@ ITEM: ATOMS id type x y z f_Totaltemperatom
    ``` python 
     python Deal_dump_files.py
    ```
-   **You can modify python version carefully after running and use it freely**
+   **You can modify python version after running and use it freely**
 ----
 ## Example
 * For matlab version
@@ -54,7 +54,7 @@ ITEM: ATOMS id type x y z f_Totaltemperatom
    dump                1     all     custom   ${output_interval}    dump.main   id   type   x   y   z   f_Totaltemperatom 
    dump_modify         1     sort    id          #Sort each atom order
   
-   run                   40000000                # Total_running_steps
+   run                   4000000                 # Total_running_steps
    ```
 
 ## TODO
