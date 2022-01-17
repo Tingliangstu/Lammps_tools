@@ -5,7 +5,8 @@ import  csv   #import  csv lib
 import math 
 
 print('Applicable only to metal units in lammps.')
-print('By Ting Liang')
+print('From Ting Liang s matlab program')
+print('python script by Jingzhong Fang')
 
 Data=[]
 
@@ -17,7 +18,7 @@ with open('LJ_data4py.csv')as f:
 
 ## Enter two elements that you want to get LJ interactions
 elememt_1 = 'W'
-elememt_2 = 'Nb'
+elememt_2 = 'Hf'
 ## Need to pay attention to the capitalization of letters
 
 for irow in Data:
