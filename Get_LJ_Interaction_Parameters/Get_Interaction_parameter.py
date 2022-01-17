@@ -16,17 +16,17 @@ with open('LJ_data4py.csv')as f:
         Data.append(row)
 
 ## Enter two elements that you want to get LJ interactions
-elememt_1 = 'B'
-elememt_2 = 'B'
+elememt_1 = 'W'
+elememt_2 = 'Nb'
 ## Need to pay attention to the capitalization of letters
 
 for irow in Data:
     if(irow['element'] == elememt_1):
-        elememt_1_distance =  float(row['distance'])
-        elememt_1_energy = float(row['energy'])
+        elememt_1_distance =  float(irow['distance'])
+        elememt_1_energy = float(irow['energy'])
     if(irow['element'] == elememt_2):
-        elememt_2_distance =  float(row['distance'])
-        elememt_2_energy = float(row['energy'])    
+        elememt_2_distance =  float(irow['distance'])
+        elememt_2_energy = float(irow['energy'])    
 ## Calculate LJ parameters using mixing rules (Lorentz-Berthelot mixing rules) (For lammps script input)...
 # In the UFF force field paper, the energy unit is kcal/mol, and the distance unit is angstrom (A)
 # In the metal unit of lammps, the energy unit is ev, and the distance unit is angstrom (A).
