@@ -12,8 +12,15 @@ As used by these two references:
 ## How to Use (Generally used for lammps input)
 
 You want to get the LJ interaction parameters of different elements, just put the LJ_data.csv and Get_Interaction_parameter.m files in the same folder, and run the .m file.
-The specific calculation process of these parameters can be viewed in the Formula.pdf file.
+The specific calculation process of these parameters can be viewed in the [Formula.pdf](https://github.com/Tingliangstu/Lammps_tools/blob/master/Get_LJ_Interaction_Parameters/Formula.pdf) file.
 
 Please contact me if you have any questions or suggestions.
 
 Email: liangting.zj@gmail.com
+
+## News
+
+The Python version of this script is done by [Dr. Jingzhong Fang](https://github.com/fangjzh).
+
+One can use it through this [link](https://github.com/fangjzh/Lammps_tools/blob/master/Get_LJ_Interaction_Parameters/Get_Interaction_parameter.py).
+
